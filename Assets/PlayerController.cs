@@ -34,6 +34,9 @@ public class PlayerController : MonoBehaviour {
     {
         points += extraPoints;
         textPoints.text = initialText + points.ToString();
+
+        if (points >= 100)
+            SceneManager.LoadScene("ScoreScene");
     }
 
     private void OnCollisionEnter(Collision collision)
