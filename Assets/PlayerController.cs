@@ -39,8 +39,9 @@ public class PlayerController : MonoBehaviour {
             SceneManager.LoadScene("ScoreScene");
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("COLLISION");
         if (collision.gameObject.layer == MeteorLayer)
         {
             life--;
@@ -49,5 +50,10 @@ public class PlayerController : MonoBehaviour {
 
         if(life == 0)
             SceneManager.LoadScene("ScoreScene");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("TRIGGERED");
     }
 }
