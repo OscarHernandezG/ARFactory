@@ -19,8 +19,10 @@ public class PlayerController : MonoBehaviour {
     public int MeteorLayer;
 
     string initialText;
-    int points = 0;
-    int life = 3;
+    [HideInInspector]
+    public int points = 0;
+    [HideInInspector]
+    public int life = 3;
 
     // Use this for initialization
 	void Start ()
@@ -36,7 +38,9 @@ public class PlayerController : MonoBehaviour {
         textPoints.text = initialText + points.ToString();
 
         if (points >= 100)
+        {
             SceneManager.LoadScene("ScoreScene");
+        }      
     }
 
     void OnCollisionEnter(Collision collision)
@@ -49,7 +53,9 @@ public class PlayerController : MonoBehaviour {
         }
 
         if(life == 0)
+        {
             SceneManager.LoadScene("ScoreScene");
+        }       
     }
 
     private void OnTriggerEnter(Collider other)

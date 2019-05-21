@@ -167,7 +167,8 @@ AudioSource:
   m_GameObject: {fileID: 2049010778}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 95c51f5b3231feb4f9a0eeb7e259a0ca,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -448,11 +449,39 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8300000, guid: 4f168f5086d1577489634e160ace6d8f, type: 3}
+    - target: {fileID: 1546442321942322, guid: 19a81168ee27ffb4d8192b271b46a000, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486250009005240, guid: 19a81168ee27ffb4d8192b271b46a000, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114113876151392582, guid: 19a81168ee27ffb4d8192b271b46a000,
+        type: 2}
+      propertyPath: panel1
+      value: 
+      objectReference: {fileID: 2129297742}
+    - target: {fileID: 114113876151392582, guid: 19a81168ee27ffb4d8192b271b46a000,
+        type: 2}
+      propertyPath: panel2
+      value: 
+      objectReference: {fileID: 2129297741}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19a81168ee27ffb4d8192b271b46a000, type: 2}
   m_IsPrefabParent: 0
 --- !u!224 &2129297740 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224293646234237550, guid: 19a81168ee27ffb4d8192b271b46a000,
+    type: 2}
+  m_PrefabInternal: {fileID: 2129297739}
+--- !u!1 &2129297741 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1546442321942322, guid: 19a81168ee27ffb4d8192b271b46a000,
+    type: 2}
+  m_PrefabInternal: {fileID: 2129297739}
+--- !u!1 &2129297742 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1486250009005240, guid: 19a81168ee27ffb4d8192b271b46a000,
     type: 2}
   m_PrefabInternal: {fileID: 2129297739}

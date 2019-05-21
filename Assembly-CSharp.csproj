@@ -58,6 +58,7 @@
      <Compile Include="Assets\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
      <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\PlayerController.cs" />
+     <Compile Include="Assets\sceneManager.cs" />
      <Compile Include="Assets\ScoreMenu.cs" />
      <Compile Include="Assets\Scripts\CreatingRocks.cs" />
      <Compile Include="Assets\Scripts\RockScript.cs" />

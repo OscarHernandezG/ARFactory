@@ -10,13 +10,31 @@ public class ScoreMenu : MonoBehaviour
     public TextMeshProUGUI textPoints1;
     public TextMeshProUGUI textPoints2;
 
-    //void Start()
-    //{
-    //    textPoints1 = .ToString();
-    //    textPoints2 = .ToString();
+    public GameObject panel1;
+    public GameObject panel2;
 
+    private int points1;
+    private int points2;
+    private Player winner;
 
-    //}
+    void Start()
+    {
+        points1 = PlayerPrefs.GetInt("player1");
+        points2 = PlayerPrefs.GetInt("player2");
+
+        textPoints1.text = points1.ToString();
+        textPoints2.text = points2.ToString();
+
+        winner = (Player)PlayerPrefs.GetInt("Winner");
+        if (winner.Equals(Player.Player1))
+        {
+            panel1.SetActive(true);
+        }
+        else
+        {
+            panel2.SetActive(true);
+        }
+    }
 
     public void GoToMainMenu()
     {
