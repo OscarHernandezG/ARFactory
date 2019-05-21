@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 198264531921113160}
   - component: {fileID: 199727133270017890}
   - component: {fileID: 82656526238504568}
+  - component: {fileID: 54278832808553096}
   m_Layer: 8
   m_Name: AsteroidLavaViolet3 1
   m_TagString: Untagged
@@ -89,6 +90,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1490560503711250}
   m_Mesh: {fileID: 4300004, guid: 2b670e6271de7be4a91c3885176549ad, type: 3}
+--- !u!54 &54278832808553096
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490560503711250}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!82 &82656526238504568
 AudioSource:
   m_ObjectHideFlags: 1

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RockScript : MonoBehaviour {
+public class RockScript : MonoBehaviour
+{
 
     public float lifeTime;
 
@@ -16,20 +17,27 @@ public class RockScript : MonoBehaviour {
 
     private bool is_alive = true;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         Destroy(gameObject, lifeTime);
         explosionSound = GetComponent<AudioSource>();
-        
-	}
 
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (is_alive)
             transform.position += direction * Time.deltaTime * speed;
-	}
+    }
 
     private void OnCollisionEnter(Collision collision)
+    {
+        Die();
+    }
+
+    public void Die()
     {
         is_alive = false;
 

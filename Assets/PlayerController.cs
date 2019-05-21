@@ -26,13 +26,18 @@ public class PlayerController : MonoBehaviour {
 
     public int maxPoints = 100;
 
+    AudioSource audioSource;
+
     // Use this for initialization
 	void Start ()
     {
         points = 0;
         initialText = textPoints.text;
         UpdateLabel(0);
-	}
+
+        audioSource = GetComponent<AudioSource>();
+
+    }
 
     public void UpdateLabel(int extraPoints)
     {
@@ -45,23 +50,23 @@ public class PlayerController : MonoBehaviour {
         }      
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("COLLISION");
-        if (collision.gameObject.layer == MeteorLayer)
-        {
-            life--;
-            Destroy(textPoints.transform.GetChild(life).gameObject);
-        }
-
-        if(life == 0)
-        {
-            sceneManager.call.FinishGame();
-        }       
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("TRIGGERED");
+
+        if (other.gameObject.layer == MeteorLayer)
+        {
+            life--;
+            Destroy(textPoints.transform.GetChild(life).gameObject);
+
+            other.gameObject.GetComponent<RockScript>().Die();
+        }
+
+        if (life == 0)
+        {
+            sceneManager.call.FinishGame();
+        }
+
+        audioSource.Play();
     }
 }
