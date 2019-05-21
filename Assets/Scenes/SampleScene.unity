@@ -341,7 +341,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 113777231}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.971, y: 0, z: -0.187}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1558866683}
@@ -433,7 +433,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: ImageTargetMesh33692
+  m_Name: ImageTargetMesh43548
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -593,7 +593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &395650915
 Transform:
   m_ObjectHideFlags: 0
@@ -1607,7 +1607,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: 'Augmented_reality_marker_QRx2Material
 
-    33582'
+    43444'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -1707,7 +1707,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: ImageTargetMesh33572
+  m_Name: ImageTargetMesh43434
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -2213,7 +2213,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: 'Augmented_reality_marker_QRMaterial
 
-    33702'
+    43558'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
