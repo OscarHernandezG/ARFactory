@@ -284,6 +284,7 @@ MonoBehaviour:
   MeteorLayer: 8
   points: 0
   life: 3
+  maxPoints: 100
 --- !u!136 &94427523
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -431,6 +432,7 @@ MonoBehaviour:
   MeteorLayer: 8
   points: 0
   life: 3
+  maxPoints: 100
 --- !u!114 &395650917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,9 +1528,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426f3068c3231f440ae93d792ef66d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  call: {fileID: 0}
-  player1: {fileID: 0}
-  player2: {fileID: 0}
+  player1: {fileID: 94427522}
+  player2: {fileID: 395650916}
 --- !u!4 &1057840017
 Transform:
   m_ObjectHideFlags: 0

@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour {
     [HideInInspector]
     public int life = 3;
 
+    public int maxPoints = 100;
+
     // Use this for initialization
 	void Start ()
     {
@@ -37,9 +39,9 @@ public class PlayerController : MonoBehaviour {
         points += extraPoints;
         textPoints.text = initialText + points.ToString();
 
-        if (points >= 100)
+        if (points >= maxPoints)
         {
-            SceneManager.LoadScene("ScoreScene");
+            sceneManager.call.FinishGame();
         }      
     }
 
@@ -54,7 +56,7 @@ public class PlayerController : MonoBehaviour {
 
         if(life == 0)
         {
-            SceneManager.LoadScene("ScoreScene");
+            sceneManager.call.FinishGame();
         }       
     }
 
