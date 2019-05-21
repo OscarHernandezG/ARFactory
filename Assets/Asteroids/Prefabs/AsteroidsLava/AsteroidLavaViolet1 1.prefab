@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23687281670349722}
   - component: {fileID: 114433957060500332}
   - component: {fileID: 135258612590488918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AsteroidLavaViolet1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

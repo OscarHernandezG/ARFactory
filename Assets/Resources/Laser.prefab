@@ -59,7 +59,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 45c7759c08e24024dba78c1c6c0c6700, type: 2}
+  - {fileID: 2100000, guid: d30a41342de869b48a9c3d01aaa6ac04, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9c8d513479e6e4d85826b460125709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MeteorLayer: 0
+  MeteorLayer: 8
   player: {fileID: 0}
 --- !u!136 &136538318863111840
 CapsuleCollider:
