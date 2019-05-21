@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class bulletShoot : MonoBehaviour {
 
     public GameObject Bullet_Emitter_Right;
-
     public GameObject Bullet_Emitter_Left;
-
     public GameObject Bullet;
 
     public float bullet_speed;
@@ -18,11 +17,14 @@ public class bulletShoot : MonoBehaviour {
 
     public AudioSource laser_sound;
 
+    private PlayerController player;
+
     // Use this for initialization
     void Start() {
 
         laser_sound = GetComponent<AudioSource>();
 
+        player = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -30,12 +32,14 @@ public class bulletShoot : MonoBehaviour {
 
         if (timer >= time)
         {
-
-
+            
             GameObject bullet_right;
             GameObject bullet_left;
             bullet_right = Instantiate(Bullet, Bullet_Emitter_Right.transform.position, Bullet_Emitter_Right.transform.rotation);
             bullet_left = Instantiate(Bullet, Bullet_Emitter_Left.transform.position, Bullet_Emitter_Left.transform.rotation);
+
+            bullet_right.GetComponent<Bullet>().player = player;
+            bullet_left.GetComponent<Bullet>().player = player;
 
             laser_sound.Play();
 
