@@ -29,7 +29,7 @@ public class CreatingRocks : MonoBehaviour {
 
         if (diagonalTimer >= 1.5f)
         {
-            NewDiagonalRock();
+           // NewDiagonalRock();
             diagonalTimer = 0.0f;
         }
         diagonalTimer += Time.deltaTime;
@@ -44,7 +44,7 @@ public class CreatingRocks : MonoBehaviour {
         int position = Random.Range(0, rocks.Count);
 
         GameObject go = Instantiate(rocks[position], pos, Random.rotationUniform);
-        go.GetComponent<RockScript>().direction = rocks[position].transform.forward;
+        go.GetComponent<RockScript>().direction = -rocks[position].transform.up;
 
         float scale = Random.Range(1.5f, maxScale);
         go.transform.localScale = new Vector3(scale, scale, scale);
