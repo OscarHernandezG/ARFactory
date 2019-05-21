@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum Player
 {
@@ -28,7 +29,7 @@ public class PlayerController : MonoBehaviour {
         initialText = textPoints.text;
         UpdateLabel(0);
 	}
-	
+
     public void UpdateLabel(int extraPoints)
     {
         points += extraPoints;
@@ -44,9 +45,6 @@ public class PlayerController : MonoBehaviour {
         }
 
         if(life == 0)
-        {
-            Debug.Log("You died");
-            //LOAD SCORE SCENE - YOU LOSE
-        }
+            SceneManager.LoadScene("ScoreScene");
     }
 }
