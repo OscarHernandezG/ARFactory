@@ -15,9 +15,12 @@ public class PlayerController : MonoBehaviour {
 
     public Text textPoints;
 
+    public int MeteorLayer;
+
     string initialText;
     int points = 0;
-	
+    int life = 3;
+
     // Use this for initialization
 	void Start ()
     {
@@ -30,5 +33,20 @@ public class PlayerController : MonoBehaviour {
     {
         points += extraPoints;
         textPoints.text = initialText + points.ToString();
-   }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == MeteorLayer)
+        {
+            life--;
+            Destroy(textPoints.transform.GetChild(life).gameObject);
+        }
+
+        if(life == 0)
+        {
+            Debug.Log("You died");
+            //LOAD SCORE SCENE - YOU LOSE
+        }
+    }
 }
