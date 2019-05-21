@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum Player
 {
@@ -30,5 +31,10 @@ public class PlayerController : MonoBehaviour {
     {
         points += extraPoints;
         textPoints.text = initialText + points.ToString();
-   }
+
+        if (points >= 50)
+        {
+            SceneManager.LoadScene("ScoreScene");
+        }
+    }
 }
