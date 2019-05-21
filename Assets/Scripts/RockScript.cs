@@ -18,7 +18,7 @@ public class RockScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Destroy(gameObject, lifeTime);
-        explosionSound = GetComponent<AudioSource>();
+        //explosionSound = GetComponent<AudioSource>();
 	}
 
 	// Update is called once per frame
@@ -29,7 +29,7 @@ public class RockScript : MonoBehaviour {
     private void OnCollisionEnter(Collision collision)
     {
         // Play audio destroy meteor
-        explosionSound.Play();
+        //explosionSound.Play();
 
         Destroy(gameObject);
     }
