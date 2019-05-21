@@ -39,7 +39,7 @@ public class CreatingRocks : MonoBehaviour {
     {
         float posX = Random.Range(transform.position.x - distance.x, transform.position.x + distance.x);
 
-        Vector3 pos = new Vector3(posX, transform.position.z + distance.y, 0f);
+        Vector3 pos = new Vector3(posX, 0f, transform.position.z + distance.y);
 
         int position = Random.Range(0, rocks.Count);
 
