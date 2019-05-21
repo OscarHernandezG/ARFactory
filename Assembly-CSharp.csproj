@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\bulletShoot.cs" />
+    <Compile Include="Assets\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\Scripts\CreatingRocks.cs" />

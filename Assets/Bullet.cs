@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour {
     {
         if (collision.gameObject.layer == MeteorLayer)
         {
-            player.points += 10;
+            player.UpdateLabel(10);
             Destroy(gameObject);
         }
     }
